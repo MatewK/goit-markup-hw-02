@@ -4,11 +4,11 @@
     --main-font: font-family: 'Roboto', sans-serif;
     --secondary-font: font-family: 'Raleway', sans-serif;
     --font-bold: font-weight: bold;
-    --main-background: #FFFFFF;
+    --four-color: #FFFFFF;
     --service-bacground: #2F303A;
-    --service-text: #FFFFFF;
-    --our-team-background:#F5F4FA;
+    --third-color:#F5F4FA;
     --secondary-text-color:#212121;
+    --fifth-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -18,19 +18,19 @@ body {
 /* ==========HEADER============ */
 
 .header{
-    background-color: var(--main-background);
+    background-color: var(--four-color);
 }
 
 .logo-part{
     color: var(--main-color);
 }
 .navigation-logo {
-    font-family: Roboto;
+    font-family: var(--secondary-font);
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
     
     color: var(--main-text-color);
 }
@@ -74,26 +74,65 @@ color: var(--main-text-color);
 /* =============MAIN============ */
 .service {
     background-color: var(--service-bacground);
-    color: var(--service-text);
+    color: var(--four-color);
 }
 
-.service-button {
+.one-button {
     background-color: var(--main-color);
-    color: var(--service-text);
+    color: var(--four-color);
+}
+.service-button {
+    background-color: var(--third-color);
+    color: var(--secondary-text-color);
     cursor: pointer;
 }
-
-.text-content {
-
+.service-button:hover{
+    background-color: var(--main-color);
+    color: var(--four-color);
 }
+
 .our-team-images{
-background-color: var(--our-team-background);
+    background-color: var(--third-color);
 }
-.text-content-header > body{
+.text-content-header {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--secondary-text-color);
 }
 
 .text-content{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
 /* =============END MAIN============ */
+/* ============FOOTER============== */
+.footer {
+    background-color: var(--service-bacground);
+    color: var(--four-color);
+    font-style: normal;
+}
+.navigation-logo-footer{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--four-color);
+}
+.address-mail-footer {
+    color: var(--fifth-color);
+}
+.phone-number-footer {
+    color: var(--fifth-color);
+}
+/* ============END FOOTER============== */
