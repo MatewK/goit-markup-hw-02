@@ -12,37 +12,42 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a href="index.html">WebStudio</a>
+        <header class="header">
+            <a class="navigation-logo" href="index.html"><span class="logo-part">Web</span>Studio</a>
              
             <nav>
                 <ul>
-                    <li><a href="Agencja">Agencja</a></li>
-                    <li><a href="Portfolio.html">Portfolio</a></li>
-                    <li><a href="Kontakt">Kontakt</a></li>
+                    <li>
+                        <a class="navigation-list-link" href="Portfolio.html">Portfolio</a></li>
+                    <li>
+                        <a class="navigation-list-link" href="Agencja">Agencja</a></li>
+                    <li>
+                        <a class="navigation-list-link" href="Kontakt">Kontakt</a></li>
                 </ul>    
             </nav>
-            <ul>
-                <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="+48111111111">+48 111 111 111</a></li>
-            </ul>       
+            <address class="address">
+                <p><a class="address-mail" href="info@devstudio.com">info@devstudio.com</a></p>
+                <p><a class="phone-number" href="+48111111111">+48 111 111 111</a></p>
+            </address>       
             
         </header>
         
         <main>
-            <section>
+            <div>
+            <section class="service">
                 <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <p><button type="button">Zamów usługę</button></p>
-            </section>
+                <p><button class=service-button" type="button">Zamów usługę</button></p>
+            </div>
+        </section>
             
             <section>
-                    <ul>
+                    <ul class="text-content-header">
                        <li><h2>Lorem ipsum</h2></li>
                        <li><h2>Lorem ipsum</h2></li>
                        <li><h2>Lorem ipsum</h2></li>
                        <li><h2>Lorem ipsum</h2></li>
                     </ul>
-                    <ul>
+                    <ul class="text-content">
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                              Nam vel arcu sem. Sed non sodales dui. Interdum et malesuada</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -54,14 +59,17 @@
                     </ul>
             </section>
             <section>
-                <h2>Czym się zajmujemy</h2>
+                <h2 class="text-content-header">Czym się zajmujemy</h2>
+                    <div>
                     <ul>
                         <li><img src="images/1.png" alt="Pisanie" width="370" height="294"></li>
                         <li><img src="images/2.png" alt="Kontakt z klientem" width="370" height="294"></li>
                         <li><img src="images/3.png" alt="Projektowanie graficzne" width="370" height="294"></li>
                     </ul>
+                </div>
             </section>
             <section>
+                <div class="our-team-images">
                 <h2>Nasz zespół</h2>
                     <ul>
                         <li>
@@ -89,6 +97,7 @@
                             </figure>    
                         </li>
                     </ul>
+                </div>
             </section>
         </main>
         
@@ -96,8 +105,8 @@
             <address>
                 <a href="WebStudio">WebStudio</a><br>
                 m.Warszawa, Aleje Jerozolimskie 21<br>
-                <a href="mailto:info@example.com">info@example.com</a><br>
-                <a href="+48111111111">+48 111 111 111</a>
+                <a class="address-mail" href="mailto:info@example.com">info@example.com</a><br>
+                <a class="phone-number" href="+48111111111">+48 111 111 111</a>
               </address>
         </footer>
     </body>
