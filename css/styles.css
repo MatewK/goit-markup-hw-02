@@ -168,6 +168,7 @@ body {
     color: var(--four-color);
     font-style: normal;
 }
+
 .navigation-logo-footer{
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -177,9 +178,17 @@ body {
     color: var(--four-color);
     text-decoration: none;
 }
+.address-mail-footer:focus,
+.address-mail-footer:hover{
+    color: var(--main-color);
+}
 .address-mail-footer {
     color: var(--fifth-color);
     text-decoration: none;
+}
+.phone-number-footer:focus,
+.phone-number-footer:hover{
+    color: var(--main-color);
 }
 .phone-number-footer {
     color: var(--fifth-color);
